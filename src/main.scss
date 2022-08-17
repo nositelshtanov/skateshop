@@ -24,13 +24,17 @@ button {
 }
 
 body {
-  height: 300vh;
+
 }
 
 #root {
-  height: 100%;
+
 }
 
 .App {
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+

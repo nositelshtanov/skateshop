@@ -1,11 +1,122 @@
 .brands {
-  padding-top: 15px;
+  margin: 0 auto;
+  width: 1450px;
+
+  @media screen and (max-width: 1450px) {
+    width: auto;
+    padding: 0 35px;
+    margin: 0;
+  }
 
   .brands_h3 {
     text-align: center;
-    font-size: 1.5625em;
+    font-size: 1.5625rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+    margin-bottom: 15px;
   }
 }
+
+.footer {
+  background: rgba(156, 156, 156, 0.1);
+  margin-top: 45px;
+
+  .footer_content {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    @media screen and (max-width: 1170px) {
+      width: auto;
+    }
+
+    @media screen and (max-width: 484px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 30px;
+    }
+
+    .left_column {
+      .logo_text {
+        display: flex;
+        align-items: center;
+        height: 100px;
+
+        &__logo {
+          img {
+            width: 100px;
+          }
+
+        }
+
+        &__text {
+          padding-left: 10px;
+          h4 {
+            line-height: 1.2;
+            letter-spacing: 0;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+          }
+
+          p {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+
+          }
+        }
+      }
+    }
+
+    .right_column {
+      .tels {
+        height: 100%;
+
+        .tels_inner {
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          &__icon {
+            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMzkgMTM5IiBoZWlnaHQ9IjEzOXB4IiBpZD0iUGhvbmUiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEzOSAxMzkiIHdpZHRoPSIxMzlweCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTY3LjMxNyw4MS45NTJjLTkuMjg0LTcuNjM0LTE1LjQ4My0xNy4wNTQtMTguNzQyLTIyLjQxNGwtMi40MzEtNC41ODNjMC44NS0wLjkxMiw3LjMzMi03Ljg1MywxMC4xNDEtMTEuNjE5ICBjMy41My00LjcyOS0xLjU4OC05LTEuNTg4LTlTNDAuMjk2LDE5LjkzMywzNy4wMTQsMTcuMDc2Yy0zLjI4Mi0yLjg2MS03LjA2LTEuMjcyLTcuMDYtMS4yNzIgIGMtNi44OTgsNC40NTctMTQuMDQ5LDguMzMyLTE0LjQ3OCwyNi45NjhDMTUuNDYsNjAuMjIsMjguNzA1LDc4LjIxNiw0My4wMjgsOTIuMTQ4YzE0LjM0NiwxNS43MzQsMzQuMDQzLDMxLjUwNCw1My4wODYsMzEuNDg2ICBjMTguNjM0LTAuNDI1LDIyLjUwOC03LjU3NSwyNi45NjUtMTQuNDczYzAsMCwxLjU5LTMuNzc1LTEuMjY4LTcuMDZjLTIuODYtMy4yODQtMTcuMjY1LTE3LjY4OC0xNy4yNjUtMTcuNjg4ICBzLTQuMjY4LTUuMTE5LTguOTk4LTEuNTg2Yy0zLjUyNSwyLjYzNS05Ljg1NSw4LjQ5Ni0xMS4zOCw5LjkxN0M4NC4xNzEsOTIuNzQ5LDczLjU4Miw4Ny4xMDQsNjcuMzE3LDgxLjk1MnoiIGlkPSJwYXRoLTIiIGZpbGwtb3BhY2l0eT0iMSIgdHlwZT0ic29saWRDb2xvciIgZmlsbD0iIzk3YTNhZiI+PC9wYXRoPjwvc3ZnPg==");
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+
+          &__tels {
+            padding-left: 10px;
+            a {
+              display: block;
+              font-size: 1.1875rem;
+              line-height: 1.3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .toTop {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background: rgba(106, 104, 112, 0.3);
+    cursor: pointer;
+
+    .icon {
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgaGVpZ2h0PSIzMnB4IiBpZD0iTGF5ZXJfMSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMTguMjIxLDcuMjA2bDkuNTg1LDkuNTg1YzAuODc5LDAuODc5LDAuODc5LDIuMzE3LDAsMy4xOTVsLTAuOCwwLjgwMWMtMC44NzcsMC44NzgtMi4zMTYsMC44NzgtMy4xOTQsMCAgbC03LjMxNS03LjMxNWwtNy4zMTUsNy4zMTVjLTAuODc4LDAuODc4LTIuMzE3LDAuODc4LTMuMTk0LDBsLTAuOC0wLjgwMWMtMC44NzktMC44NzgtMC44NzktMi4zMTYsMC0zLjE5NWw5LjU4Ny05LjU4NSAgYzAuNDcxLTAuNDcyLDEuMTAzLTAuNjgyLDEuNzIzLTAuNjQ3QzE3LjExNSw2LjUyNCwxNy43NDgsNi43MzQsMTguMjIxLDcuMjA2eiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIxIiBpZD0icGF0aC0yIiB0eXBlPSJzb2xpZENvbG9yIj48L3BhdGg+PC9zdmc+");
+      height: 40px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+

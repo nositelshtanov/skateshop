@@ -22,15 +22,6 @@ const Header = () => {
 
     return (
         <>
-            <div className={s.head_info}>
-                <div className={s.head_info__text}>
-                    СТАРЕЙШИЙ СКЕЙТШОП СТОЛИЦЫ!
-                </div>
-                <div className={s.head_info__tels}>
-                    <span><a href="tel:84956044552">8 (495) 604-45-52</a></span><br />
-                    <span><a href="tel:88002014552">8 (800) 201-45-52</a></span>
-                </div>
-            </div>
             <div
                 className={`${s.mobile_menu_back} ${mobMenuVisible ? s.active : ""}`}
                 onClick={() => setMobMenuVisible(false)}
@@ -105,63 +96,74 @@ const Header = () => {
                     <span><a href="tel:88002014552">8 (800) 201-45-52</a></span>
                 </div>
             </aside>
-            <header>
-                <button
-                    className={s.burger_menu}
-                    onClick={() => setMobMenuVisible(true)}
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div className={s.logo}>
-                    <Link
-                        to={"/"}
-                        onClick={scrollToTopAnd()}
+            <div>
+                <div className={s.head_info}>
+                    <div className={s.head_info__text}>
+                        СТАРЕЙШИЙ СКЕЙТШОП СТОЛИЦЫ!
+                    </div>
+                    <div className={s.head_info__tels}>
+                        <span><a href="tel:84956044552">8 (495) 604-45-52</a></span><br />
+                        <span><a href="tel:88002014552">8 (800) 201-45-52</a></span>
+                    </div>
+                </div>
+                <header>
+                    <button
+                        className={s.burger_menu}
+                        onClick={() => setMobMenuVisible(true)}
                     >
-                        <img className={s.logo__img} src="/images/logo.webp" alt="logo"/>
-                        <div className={s.logo__text}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div className={s.logo}>
+                        <Link
+                            to={"/"}
+                            onClick={scrollToTopAnd()}
+                        >
+                            <img className={s.logo__img} src="/images/logo.webp" alt="logo"/>
+                            <div className={s.logo__text}>
                             <span>
                                 Скейтшоп ПроДвижение
                             </span>
-                        </div>
-                    </Link>
-                </div>
-                <div className={s.menu}>
-                    <ul>
-                        <li><Link
-                            onClick={scrollToTopAnd()}
-                            to={"/"}
-                        >Главная</Link></li>
-                        <li><Link
-                            onClick={scrollToTopAnd()}
-                            to={"/catalog"}
-                        >Каталог</Link></li>
-                        <li><Link
-                            onClick={scrollToTopAnd()}
-                            to={"/about"}
-                        >О Сайте</Link></li>
-                    </ul>
-                </div>
-                <div className={s.header_buttons}>
-                    <ul>
-                        <li>
-                            <button
-                                className={s.search}
-                                onClick={() => setSearchInputVisible(true)}
-                            ></button>
-                        </li>
-                        <li>
-                            <div className={s.cart_wrapper}>
-                                <Link
-                                    onClick={scrollToTopAnd()}
-                                    to={"/cart"}
-                                ></Link>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </header>
+                        </Link>
+                    </div>
+                    <div className={s.menu}>
+                        <ul>
+                            <li><Link
+                                onClick={scrollToTopAnd()}
+                                to={"/"}
+                            >Главная</Link></li>
+                            <li><Link
+                                onClick={scrollToTopAnd()}
+                                to={"/catalog"}
+                            >Каталог</Link></li>
+                            <li><Link
+                                onClick={scrollToTopAnd()}
+                                to={"/about"}
+                            >О Сайте</Link></li>
+                        </ul>
+                    </div>
+                    <div className={s.header_buttons}>
+                        <ul>
+                            <li>
+                                <button
+                                    className={s.search}
+                                    onClick={() => setSearchInputVisible(true)}
+                                ></button>
+                            </li>
+                            <li>
+                                <div className={s.cart_wrapper}>
+                                    <Link
+                                        onClick={scrollToTopAnd()}
+                                        to={"/cart"}
+                                    ></Link>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
         </>
     );
 };

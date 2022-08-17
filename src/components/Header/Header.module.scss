@@ -28,7 +28,7 @@
 
 .searchInput_contaier {
   position: fixed;
-  z-index: 3;
+  z-index: 3000;
   top: -100px;
   bottom: 0;
   left: 0;
@@ -50,6 +50,10 @@
     transform: translateX(-50%);
     width: 300px;
     height: 50px;
+    
+    @media screen and (max-width: 400px) {
+      width: 200px;
+    }
 
     &::after {
       content: "";
@@ -100,7 +104,7 @@
   left: 0;
   background: rgba(0,0,0,.5);
   backdrop-filter: blur(4px);
-  z-index: 1;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   transition: opacity .5s, visibility .5s;
@@ -118,7 +122,7 @@
   position: fixed;
   width: 265px;
   height: 100vh;
-  z-index: 2;
+  z-index: 2000;
   top: 0;
   left: -295px;
   transition: left .5s;
@@ -191,6 +195,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 999  ;
 
   @media screen and (max-width: 900px) {
     justify-content: space-between;
@@ -328,6 +333,11 @@ header {
       li {
         height: 45px;
         width: 45px;
+
+        @media screen and (max-width: 320px) {
+          height: 30px;
+          width: 30px;
+        }
 
         button.search {
           background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMzkgMTM5IiBoZWlnaHQ9IjEzOXB4IiBpZD0iRmluZCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTM5IDEzOSIgd2lkdGg9IjEzOXB4IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMTI3LjU1OCwxMTEuOTYxTDEwMC4yNDksODQuNjVjNC42NC03LjM4Nyw3LjMzMy0xNi4xMTgsNy4zMzMtMjUuNDg4YzAtMjYuNTA5LTIxLjQ5LTQ3Ljk5Ni00Ny45OTgtNDcuOTk2ICBjLTI2LjUwOCwwLTQ3Ljk5NiwyMS40ODctNDcuOTk2LDQ3Ljk5NmMwLDI2LjUxLDIxLjQ4Nyw0Ny45OTUsNDcuOTk2LDQ3Ljk5NWMxMC4xOTcsMCwxOS42NDItMy4xODgsMjcuNDE0LTguNjA1bDI2Ljk4NCwyNi45ODYgIGMxLjg3NSwxLjg3Myw0LjMzMywyLjgwNiw2Ljc4OCwyLjgwNmMyLjQ1OCwwLDQuOTEzLTAuOTMzLDYuNzkxLTIuODA2QzEzMS4zMDgsMTIxLjc4NywxMzEuMzA4LDExNS43MTEsMTI3LjU1OCwxMTEuOTYxeiAgIE01OS41ODQsOTEuNjA3Yy0xNy45MTcsMC0zMi40NDMtMTQuNTI1LTMyLjQ0My0zMi40NDNTNDEuNjY3LDI2LjcyLDU5LjU4NCwyNi43MmMxNy45MTgsMCwzMi40NDMsMTQuNTI2LDMyLjQ0MywzMi40NDQgIFM3Ny41MDIsOTEuNjA3LDU5LjU4NCw5MS42MDd6IiBpZD0icGF0aC0yIiBmaWxsLW9wYWNpdHk9IjEiIHR5cGU9InNvbGlkQ29sb3IiIGZpbGw9IiM2NjY2NjYiPjwvcGF0aD48L3N2Zz4=");
