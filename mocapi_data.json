@@ -1,0 +1,192 @@
+{
+  "brands": [
+    {
+      "id": "0",
+      "name": "adidas Skateboarding",
+      "detail": "https://proskate.ru/d/brand_adidas_skateboarding.jpg",
+      "preview": "https://proskate.ru/thumb/2/e61wcV8ONucWgrIb-VDNaw/100r90/d/adidas.jpg?imgsrc=1660836039979"
+    },
+    {
+      "id": "1",
+      "name": "Almost",
+      "detail": "https://proskate.ru/d/brand_almost.jpg",
+      "preview": "https://proskate.ru/thumb/2/7XLDJltn9QbRC97-Ie8eGw/100r90/d/almost.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Anteater",
+      "detail": "https://proskate.ru/d/brand_anteater.jpg",
+      "preview": "https://proskate.ru/thumb/2/TrzfLcr7Jw6WG7XCl6iddA/100r90/d/4f697ea4e1164e8d03db0a2e2a3a1676.jpg"
+    },
+    {
+      "id":  "3",
+      "name": "Baker",
+      "detail": "https://proskate.ru/d/brand_baker.jpg",
+      "preview": "https://proskate.ru/thumb/2/CR1badTU_r4VDZKORmx0qg/100r90/d/baker-skateboards-logo1432178038.jpg"
+    },
+    {
+      "id":  "4",
+      "name": "Circa",
+      "detail": "https://proskate.ru/d/brand_circa.jpg",
+      "preview": "https://proskate.ru/thumb/2/N33gXzV-U46JI9hJJRT5rA/100r90/d/400c35bfc5fc58ea9b1eb47660b5c677.jpg"
+    },
+    {
+      "id":  "5",
+      "name": "Fallen",
+      "detail": "https://proskate.ru/d/brand_fallen.jpg",
+      "preview": "https://proskate.ru/thumb/2/GCNx52LmCzHkBCKcfA6ADg/100r90/d/51rjy78fcbl_ac_sl1000.jpg"
+    },
+    {
+      "id":  "6",
+      "name": "Vans",
+      "detail": "https://proskate.ru/d/brand_vans.jpg",
+      "preview": "https://proskate.ru/thumb/2/AN_1mF-mdHDF3WsHKkGJ5Q/100r90/d/159-1597165_vans-logo-png-old-school-vans-logo-transparent.png"
+    },
+    {
+      "id":  "7",
+      "name": "Ripndip",
+      "detail": "https://proskate.ru/d/brand_ripndip.jpg",
+      "preview": "https://proskate.ru/thumb/2/9WU6Jt11uQ8d3Vkc_YRwqA/100r90/d/ripndipclothinglogo_155x.gif"
+    },
+    {
+      "id":  "8",
+      "name": "New Balance Numeric",
+      "detail": "https://proskate.ru/d/brand_new_balance_numeric.jpg",
+      "preview": "https://proskate.ru/thumb/2/yKyGlBLNVTgcMiri0cWrVw/100r90/d/new_balance_numeric.jpg"
+    },
+    {
+      "id":  "9",
+      "name": "Toy Machine",
+      "detail": "https://proskate.ru/d/brand_toy_machine.jpg",
+      "preview": "https://proskate.ru/thumb/2/P1ncSeye2xMOcw2xVqML1w/100r90/d/tm_topheader_1.png"
+    },
+    {
+      "id":  "10",
+      "name": "Thrasher",
+      "detail": "https://proskate.ru/d/brand_thrasher.jpg",
+      "preview": "https://proskate.ru/thumb/2/cly_QUJbYQtqE9FP3CbOXg/100r90/d/tresher.png"
+    },
+    {
+      "id":  "11",
+      "name": "Penny",
+      "detail": "https://proskate.ru/d/brand_penny.jpg",
+      "preview": "https://proskate.ru/thumb/2/aA_tivaEK3ZMkrjPBej3Tw/100r90/d/51e86b9d818364db7bbe332b632b5cf2.jpg"
+    },
+    {
+      "id":  "12",
+      "name": "Foundation",
+      "detail": "https://proskate.ru/d/brand_foundation.jpg",
+      "preview": "https://proskate.ru/thumb/2/EQxhznObIHBCzdv359aaSA/100r90/d/foundation-new-logo-duh_opt_opt.jpg"
+    },
+    {
+      "id":  "13",
+      "name": "Footwork",
+      "detail": "https://proskate.ru/d/brand_footwork.jpg",
+      "preview": "https://proskate.ru/thumb/2/EchrAZAJJby3zASrHG0JCw/100r90/d/footwork_logo.jpg"
+    },
+    {
+      "id":  "14",
+      "name": "Blind",
+      "detail": "https://proskate.ru/d/brand_blind.jpg",
+      "preview": "https://proskate.ru/thumb/2/WdaM5uiCMg9yljb4R9iMhw/100r90/d/blind.png?imgsrc=1660837535474"
+    },
+    {
+      "id":  "15",
+      "name": "Blackriver",
+      "detail": "https://proskate.ru/d/brand_blackriver.jpg",
+      "preview": "https://proskate.ru/thumb/2/2csAs1Sek3Nqee9-quWsLA/100r90/d/blackriver-ramps.png?imgsrc=1660837535474"
+    },
+    {
+      "id":  "16",
+      "name": "Mishka",
+      "detail": "https://proskate.ru/d/brand_mishka.jpg",
+      "preview": "https://proskate.ru/thumb/2/9My3y4xQ1YwIgMilOLsqAA/100r90/d/magnet-mishka-keep-watch_1.jpg?imgsrc=1660837535476"
+    },
+    {
+      "id":  "17",
+      "name": "Fila",
+      "detail": "https://proskate.ru/d/brand_fila.jpg",
+      "preview": "https://proskate.ru/thumb/2/32xklFGLsHTih6FAWTrDsQ/100r90/d/3qtlip.jpg?imgsrc=1660837535475"
+    }
+  ],
+  "goods": [
+    {
+      "id": "0",
+      "name": "Cкейтборд Toy Machine Vice Monster Mini Complete",
+      "brandId": "9",
+      "brandName": "Toy Machine",
+      "categoryId": "1",
+      "price": "9600",
+      "images": ["https://proskate.ru/thumb/2/hmr48BMo54-uctAcYao7MQ/580r580/d/toy_machine_vice_monster_complete_1.jpg"],
+      "desc": "скейтбоооорд..................",
+      "new": false,
+      "characteristics": {
+        "Размер": "7.375",
+        "Цвет": "красный"
+      }
+    },
+    {
+      "id": "1",
+      "name": "Cкейтборд Classic Complete",
+      "brandId": "12",
+      "brandName": "Foundation",
+      "categoryId": "1",
+      "price": "14950",
+      "images": ["https://proskate.ru/thumb/2/qfoM6flV8gyDRX3RlXI-ng/580r580/d/jart_classic_complete_1.jpg", "https://proskate.ru/thumb/2/QlzjVrcbUxQKfQ2pPSU8Wg/580r580/d/jart_classic_complete_2.jpg"],
+      "desc": "В собранных комплитах некоторые детали могут отличаться по цвету от тех, что представлены на фото.",
+      "new": true,
+      "characteristics": {
+        "Размер": "8",
+        "Цвет": "белый"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Скейтборд Footwork SKATEBUSTERS MINI",
+      "brandId": "13",
+      "brandName": "Footwork",
+      "categoryId": "1",
+      "price": "7290",
+      "images": ["https://proskate.ru/thumb/2/qvZ8pZcYmI411rO9bBXw1w/580r580/d/skejtbord_footwork_skatebusters_mini_3.jpg", "https://proskate.ru/thumb/2/TxW1j0bJ4JRSRpkhKe37JA/580r580/d/skejtbord_detskij_footwork_skatebusters_mini_7125_x_2825_3.jpg", "https://proskate.ru/thumb/2/1l3aRtYuLlpmLaO-MMOUHA/580r580/d/skejtbord_detskij_footwork_skatebusters_mini_7125_x_2825_2.jpg"],
+      "desc": "В собранных комплитах некоторые детали могут отличаться по цвету от тех, что представлены на фото.",
+      "new": false,
+      "characteristics": {
+        "Размер": "7.125",
+        "Цвет": "красный"
+      }
+    },
+    {
+      "id": "3",
+      "name": "",
+      "brandId": "0",
+      "brandName": "",
+      "categoryId": "0",
+      "price": "0",
+      "images": ["", "", ""],
+      "desc": "",
+      "new": false,
+      "characteristics": {
+        "Размер": "",
+        "Цвет": ""
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "0",
+      "name": "Футболки"
+    },
+    {
+      "id": "1",
+      "name": "Скейтборды"
+    },
+    {
+      "id": "2",
+      "name": "Круизеры"
+    },
+    {
+      "id": "3",
+      "name": "Обувь"
+    }
+  ]
+}

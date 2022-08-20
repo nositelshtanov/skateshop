@@ -1,16 +1,17 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import s from "./Header.module.scss";
 import {Link, useNavigate} from "react-router-dom";
 import {useNoScroll} from "../../hooks";
 import {scrollToTopAnd} from "../../utils";
+import {navBarLinks} from "../../router";
 
 const Header = () => {
-    const [searchInputVisible, setSearchInputVisible] = useState(false);
     const [searchInputText, setSearchInputText] = useState("");
 
-    const navigate = useNavigate();
-
+    const [searchInputVisible, setSearchInputVisible] = useNoScroll();
     const [mobMenuVisible, setMobMenuVisible] = useNoScroll();
+
+    const navigate = useNavigate();
 
     const makeSearch = () => {
         if (!searchInputText) return;
@@ -65,30 +66,17 @@ const Header = () => {
                 </div>
                 <nav className={s.mobile_menu__navigation}>
                     <ul>
-                        <li>
-                            <Link
-                                to={"/"}
-                                onClick={scrollToTopAnd(() => {setMobMenuVisible(false)})}
-                            >
-                                Главная
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to={"/catalog"}
-                                onClick={scrollToTopAnd(() => {setMobMenuVisible(false)})}
-                            >
-                                Каталог
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to={"/about"}
-                                onClick={scrollToTopAnd(() => {setMobMenuVisible(false)})}
-                            >
-                                О Сайте
-                            </Link>
-                        </li>
+                        {
+                            navBarLinks.map(link =>
+                                <li key={link.name}>
+                                    <Link
+                                        to={link.path}
+                                        onClick={scrollToTopAnd(() => {setMobMenuVisible(false)})}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>)
+                        }
                     </ul>
                 </nav>
                 <div className={s.mobile_menu__tels}>
@@ -96,7 +84,7 @@ const Header = () => {
                     <span><a href="tel:88002014552">8 (800) 201-45-52</a></span>
                 </div>
             </aside>
-            <div>
+            <>
                 <div className={s.head_info}>
                     <div className={s.head_info__text}>
                         СТАРЕЙШИЙ СКЕЙТШОП СТОЛИЦЫ!
@@ -106,7 +94,7 @@ const Header = () => {
                         <span><a href="tel:88002014552">8 (800) 201-45-52</a></span>
                     </div>
                 </div>
-                <header>
+                <header className={s.header}>
                     <button
                         className={s.burger_menu}
                         onClick={() => setMobMenuVisible(true)}
@@ -130,18 +118,17 @@ const Header = () => {
                     </div>
                     <div className={s.menu}>
                         <ul>
-                            <li><Link
-                                onClick={scrollToTopAnd()}
-                                to={"/"}
-                            >Главная</Link></li>
-                            <li><Link
-                                onClick={scrollToTopAnd()}
-                                to={"/catalog"}
-                            >Каталог</Link></li>
-                            <li><Link
-                                onClick={scrollToTopAnd()}
-                                to={"/about"}
-                            >О Сайте</Link></li>
+                            {
+                                navBarLinks.map(link =>
+                                    <li key={link.name}>
+                                        <Link
+                                            to={link.path}
+                                            onClick={scrollToTopAnd()}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    </li>)
+                            }
                         </ul>
                     </div>
                     <div className={s.header_buttons}>
@@ -163,7 +150,7 @@ const Header = () => {
                         </ul>
                     </div>
                 </header>
-            </div>
+            </>
         </>
     );
 };

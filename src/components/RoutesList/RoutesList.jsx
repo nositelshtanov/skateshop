@@ -5,12 +5,16 @@ import About from "../../pages/About";
 import Catalog from "../../pages/Catalog";
 import Cart from "../../pages/Cart";
 import SeachPage from "../../pages/SeachPage";
+import Brand from "../../pages/Brand";
+import Brands from "../../pages/Brands";
 
 const RoutesList = () => {
     return (
         <Routes>
             <Route path={"/"} element={<Main />}/>
             <Route path={"/catalog"} element={<Catalog />}/>
+            <Route path={"/brands"} element={<Brands />}/>
+            <Route path={"/brands/:id"} element={<Brand />}/>
             <Route path={"/about"} element={<About />}/>
             <Route path={"/cart"} element={<Cart />}/>
             <Route path={"/search"} element={<SeachPage />}/>

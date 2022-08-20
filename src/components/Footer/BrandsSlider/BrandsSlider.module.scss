@@ -1,0 +1,35 @@
+.brands {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 1450px;
+
+  .loader {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1450px) {
+    width: auto;
+    padding: 0 35px;
+    margin: 0;
+  }
+
+  .brands_h3 {
+    text-align: center;
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+}
+
+
+.brands_slider {
+  a {
+    display: flex;
+    align-items: center;
+    img {
+
+    }
+  }
+}
