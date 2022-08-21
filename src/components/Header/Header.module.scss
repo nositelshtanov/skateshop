@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 4px 25px;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 980px) {
     display: none;
   }
 
@@ -197,7 +197,7 @@
   top: 0;
   z-index: 999  ;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 980px) {
     justify-content: space-between;
     height: 60px;
     padding: 0;
@@ -278,7 +278,7 @@
     flex-grow: 1;
     padding-left: 25px;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 980px) {
       display: none;
     }
 

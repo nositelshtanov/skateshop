@@ -1,0 +1,10 @@
+.product {
+  display: grid;
+  place-content: center;
+  border: 1px solid black;
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+}
