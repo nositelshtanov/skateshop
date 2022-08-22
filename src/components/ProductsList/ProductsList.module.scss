@@ -4,31 +4,6 @@
   background: white;
 
   .products_list {
-    &__header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #e4e4e4;
-      padding-bottom: 2vmin;
-      column-gap: 15px;
-      row-gap: 20px;
-
-      .left_side {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        column-gap: 25px;
-        row-gap: 20px;
-
-        .range_container {
-          min-width: 250px;
-        }
-      }
-
-      .right_side {
-      }
-    }
 
     &__wrapper {
       padding-top: 20px;

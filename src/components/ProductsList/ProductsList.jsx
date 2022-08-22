@@ -1,69 +1,66 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import s from "./ProductsList.module.scss";
-import RangeSlider from "../UI/RangeSlider/RangeSlider";
 import ProductItem from "./ProductItem/ProductItem";
+import ProductListHeader from "./ProductListHeader/ProductListHeader";
 
 const ProductsList = ({products = [], showBrandSelect = true}) => {
-    const [minMax, setMinMax] = useState(null);
-    console.log(products);
+    const [filter, setFilter] = useState({
+        minMax: null,
+        selectedBrand: "",
+        selectedCategory: "",
+        selectedSort: ""
+    });
+
+    const processedProducts = useMemo(() => {
+        let productsClone = [...products];
+
+        if (filter.minMax) {
+            const [min, max] = filter.minMax;
+            productsClone = productsClone.filter(product => (+product.price) >= min && (+product.price) <= max);
+        }
+
+        if (filter.selectedBrand) {
+            productsClone = productsClone.filter(product => product.brandId == filter.selectedBrand);
+        }
+
+        if (filter.selectedCategory) {
+            productsClone = productsClone.filter(product => product.categoryId == filter.selectedCategory);
+        }
+
+        if (filter.selectedSort) {
+            const [prop, order] = filter.selectedSort.split("-");
+            // Проверить сортировку!
+            switch (prop) {
+                case "price":
+                    productsClone.sort((a, b) => {
+                        if (order == "desc") [a, b] = [b, a];
+
+                        return +b.price - +a.price;
+                    });
+                    break;
+                case "name":
+                    productsClone.sort((a, b) => {
+                        if (order == "desc") [a, b] = [b, a];
+
+                        return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+                    });
+                    break;
+            }
+        }
+
+        return productsClone;
+    }, [filter, products]);
+
     return (
         <div className={s.container}>
             <div className={s.products_list}>
-                <header className={s.products_list__header}>
-                    <div className={s.left_side}>
-                        <div className={s.range_container}>
-                            <RangeSlider min={0} max={50000} step={250} changeValuesCallback={newValue => setMinMax(newValue)} />
-                        </div>
-                        <div style={{height: 40, width: 180, border: "1px solid black"}}></div>
-                        <div style={{height: 40, width: 180, border: "1px solid black"}}></div>
-                    </div>
-                    <div className={s.right_side}>
-                        <div style={{width: 190, height: 40, border: "1px solid black"}}></div>
-                    </div>
-                </header>
+                <ProductListHeader filter={filter} changeFilter={(newFilter) => setFilter(newFilter)} />
                 <div className={s.products_list__wrapper}>
                     <div className={s.products_list__content}>
                         {
-                            products.map(product =>
+                            processedProducts.map(product =>
                                 <ProductItem key={product.id} data={product} />)
                         }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-                        {
-                            products.map(product =>
-                                <ProductItem key={product.id} data={product} />)
-                        }
-
                     </div>
                 </div>
             </div>
