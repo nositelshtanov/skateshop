@@ -18,12 +18,24 @@
   .product_data {
     display: flex;
 
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .left_side {
       width: 50%;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
     }
 
     .right_side {
       width: 50%;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
 
       .product_text {
         .buy {

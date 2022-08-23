@@ -24,7 +24,7 @@ const ProductDetail = ({data}) => {
                     <h1>{data.name}</h1>
                     <div className={s.product_data}>
                         <div className={s.left_side}>
-                            <DetailProductSlider images={[...data.images, ...data.images, ...data.images]} />
+                            <DetailProductSlider images={data.images} />
                         </div>
                         <div className={s.right_side}>
                             <div className={s.product_text}>
