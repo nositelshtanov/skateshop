@@ -1,0 +1,27 @@
+.box {
+  height: 40px;
+  max-width: 75px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  justify-content: center;
+
+  button {
+    width: calc(100% / 3);
+    background: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+
+  input {
+    font-size: 1.2rem;
+    width: calc(100% / 3);
+    border: none;
+    text-align: center;
+    outline: none;
+  }
+}

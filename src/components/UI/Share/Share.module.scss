@@ -1,0 +1,41 @@
+.btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    background: darkgray;
+  }
+
+  .popup {
+    visibility: hidden;
+    position: absolute;
+    top: -10px;
+    left: -50%;
+
+    &.active {
+      animation-name: popup;
+      animation-duration: 2s;
+    }
+  }
+
+  img {
+    height: 60%;
+  }
+}
+
+@keyframes popup {
+  from {
+    visibility: visible;
+    top: -10px;
+  }
+  to {
+    top: -30px;
+  }
+}

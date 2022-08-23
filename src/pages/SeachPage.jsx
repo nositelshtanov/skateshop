@@ -1,21 +1,21 @@
 import React, {useMemo} from 'react';
-import {useLocation} from "react-router-dom";
-
-function useQuery() {
-    const {search} = useLocation();
-
-    return useMemo(() => new URLSearchParams(search), [search]);
-}
+import {useQuery} from "../hooks";
+import H1 from "../components/UI/H1/H1";
+import {useSelector} from "react-redux";
+import ProductsList from "../components/ProductsList/ProductsList";
 
 const SeachPage = () => {
-    const query = useQuery();
-    console.log(useLocation());
+    const queryObject = useQuery();
+    const queryString = useMemo(() => queryObject.get("query"), [queryObject]);
 
-    console.log(query.get("query"));
+    const searchedProducts = useSelector(state => {
+        return state.products.products.filter(product => product.name.toLowerCase().includes(queryString.toLowerCase()));
+    });
+
     return (
         <div>
-            SEARCH PAGE<br />
-            query: {query.get("query")}
+            <H1 text={"Поиск"}/>
+            <ProductsList products={searchedProducts}/>
         </div>
     );
 };

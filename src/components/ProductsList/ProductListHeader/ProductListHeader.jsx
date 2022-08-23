@@ -4,7 +4,7 @@ import RangeSlider from "../../UI/RangeSlider/RangeSlider";
 import Select from "../../UI/Select/Select";
 import {useSelector} from "react-redux";
 
-const ProductListHeader = ({filter, changeFilter}) => {
+const ProductListHeader = ({filter, changeFilter, showBrandSelect}) => {
     const brands = useSelector(state => {
         return state.brands.brands.map(brand => ({name: brand.name, value: brand.id}));
     });
@@ -26,7 +26,9 @@ const ProductListHeader = ({filter, changeFilter}) => {
                 <div className={s.range_container}>
                     <RangeSlider min={0} max={50000} step={250} changeValuesCallback={newValue => changeFilter({...filter, minMax: newValue})} />
                 </div>
-                <Select value={filter.selectedBrand} onChange={(e) => changeFilter({...filter, selectedBrand: e.target.value})} defaultName={"Бренды"} values={brands}/>
+                {showBrandSelect &&
+                    <Select value={filter.selectedBrand} onChange={(e) => changeFilter({...filter, selectedBrand: e.target.value})} defaultName={"Бренды"} values={brands}/>
+                }
                 <Select value={filter.selectedCategory} onChange={(e) => changeFilter({...filter, selectedCategory: e.target.value})} defaultName={"Категории"} values={categories}/>
             </div>
             <div className={s.right_side}>

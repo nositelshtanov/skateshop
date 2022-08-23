@@ -1,0 +1,24 @@
+.pagination_wrapper {
+  .pagination {
+    margin: 0 auto;
+    width: fit-content;
+
+    .btn {
+      display: inline-block;
+      //margin: 0 7px;
+      padding: 3px 10px;
+      height: 25px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: none;
+      text-align: center;
+      line-height: .9;
+
+      &.active {
+        border: 1px solid lightgray;
+      }
+    }
+
+  }
+}

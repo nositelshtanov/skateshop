@@ -3,6 +3,11 @@
   margin: 0 auto;
   background: white;
 
+  .pagination_container {
+    padding-top: min(7vh, 40px);
+    border-top: 1px solid lightgray;
+  }
+
   .products_list {
 
     &__wrapper {
@@ -23,6 +28,12 @@
 
       @media screen and (max-width: 480px) {
         grid-template-columns: repeat(1, 1fr);
+      }
+
+      .empty {
+        padding-bottom: 20px;
+        place-self: center;
+        text-transform: uppercase;
       }
     }
   }

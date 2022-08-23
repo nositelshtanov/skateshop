@@ -46,3 +46,19 @@ main {
   align-items: center;
 }
 
+.swiper-pagination {
+  background: white;
+  width: max-content !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+strong.bold {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+
+
