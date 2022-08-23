@@ -23,7 +23,7 @@ const ProductDetail = ({data}) => {
                     <h1>{data.name}</h1>
                     <div className={s.product_data}>
                         <div className={s.left_side}>
-                            
+
                         </div>
                         <div className={s.right_side}>
                             <div className={s.product_text}>
