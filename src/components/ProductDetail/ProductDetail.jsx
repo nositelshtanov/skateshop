@@ -5,10 +5,11 @@ import Property from "./Property/Property";
 import {Link} from "react-router-dom";
 import Counter from "../UI/Counter/Counter";
 import Share from "../UI/Share/Share";
+import DetailProductSlider from "../UI/DetailProductSlider/DetailProductSlider";
 
 const ProductDetail = ({data}) => {
     const location = window.location.href;
-    console.log("data", data);
+
     const [count, setCount] = useState(1);
 
     const category = useSelector(state => {
@@ -23,7 +24,7 @@ const ProductDetail = ({data}) => {
                     <h1>{data.name}</h1>
                     <div className={s.product_data}>
                         <div className={s.left_side}>
-
+                            <DetailProductSlider images={[...data.images, ...data.images, ...data.images]} />
                         </div>
                         <div className={s.right_side}>
                             <div className={s.product_text}>
@@ -33,8 +34,8 @@ const ProductDetail = ({data}) => {
                                 {category ? <Property name={"Категория:"} value={category.name} /> : "" }
                                 <Property name={"Описание:"} value={data.desc} />
                                 {Object.entries(data.characteristics).map(characteristic =>
-                                    <Property key={characteristic[0]} name={characteristic[0]} value={characteristic[1]} />
-                                )
+                                        <Property key={characteristic[0]} name={characteristic[0]} value={characteristic[1]} />
+                                    )
                                 }
                                 <Property name={"Количество:"}>
                                     <Counter min={1} value={count} changeValue={(value) => setCount(value)} />
