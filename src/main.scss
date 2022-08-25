@@ -72,5 +72,27 @@ strong.bold {
   margin: 0 auto;
 }
 
+.about_page_block {
+  background: black;
+  max-width: 1024px;
+  margin: 0 auto;
+  h2 {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  p {
+    color: white;
+    padding: 0 20px;
+    padding-bottom: 15px;
+
+    a {
+      color: blue;
+    }
+  }
+}
 
 
