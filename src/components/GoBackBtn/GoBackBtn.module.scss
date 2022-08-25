@@ -1,0 +1,21 @@
+.btn {
+  height: 50px;
+  width: 140px;
+  display: block;
+  background: #222222 url("https://proskate.ru/t/v571/images/back.png");
+  color: white;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 15px center;
+  text-indent: 30px;
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #e00027;
+    transition: all .3s;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from "./ProductItem.module.scss";
 import {Link} from "react-router-dom";
+import BuyItem from "./BuyItem/BuyItem";
 
 const ProductItem = ({data}) => {
     return (
@@ -12,7 +13,7 @@ const ProductItem = ({data}) => {
                 <p><span className={s.brand}>{data.brandName}</span></p>
                 <p><Link to={`/catalog/${data.id}`} className={s.name}>{data.name}</Link></p>
                 <p><span className={s.price}>{data.price}</span> ₽</p>
-                <button className={s.buyBtn}>В корзину</button>
+                <BuyItem good={data} />
             </div>
             {data.new &&
                 <div className={s.new}>new</div>}

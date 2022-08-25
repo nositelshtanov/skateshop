@@ -1,0 +1,19 @@
+.buy {
+  width: 180px;
+  height: 40px;
+  background: none;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: all .2s;
+
+  &:hover {
+    background: #e00027;
+    color: white;
+    border-color: #e00027;
+    transition: all .2s;
+  }
+}

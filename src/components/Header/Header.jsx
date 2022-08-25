@@ -4,6 +4,7 @@ import {Link, useNavigate} from "react-router-dom";
 import {useNoScroll} from "../../hooks";
 import {scrollToTopAnd} from "../../utils";
 import {navBarLinks} from "../../router";
+import {useSelector} from "react-redux";
 
 const Header = () => {
     const [searchInputText, setSearchInputText] = useState("");
@@ -20,6 +21,12 @@ const Header = () => {
         setSearchInputVisible(false);
         setSearchInputText("");
     };
+
+    const cartGoodsNumber = useSelector(state => {
+        return state.cart.goods.reduce((summNumber, goodObject) => {
+            return summNumber + goodObject.count;
+        }, 0);
+    });
 
     return (
         <>
@@ -141,6 +148,11 @@ const Header = () => {
                             </li>
                             <li>
                                 <div className={s.cart_wrapper}>
+                                    {cartGoodsNumber ?
+                                        <div className={s.card_number}>
+                                            {cartGoodsNumber}
+                                        </div>
+                                        : ""}
                                     <Link
                                         onClick={scrollToTopAnd()}
                                         to={"/cart"}

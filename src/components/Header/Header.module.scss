@@ -358,6 +358,20 @@
           background-repeat: no-repeat;
           background-position: center;
           cursor: pointer;
+          position: relative;
+
+          .card_number {
+            position: absolute;
+            border-radius: 50%;
+            background-color: #db0023;
+            width: 22px;
+            height: 22px;
+            text-align: center;
+            line-height: 1.5;
+            right: -5px;
+            top: -5px;
+            font-size: .8rem;
+          }
 
           a {
             display: block;

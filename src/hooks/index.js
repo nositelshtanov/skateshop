@@ -1,5 +1,7 @@
-import {useState, useMemo, useEffect} from "react";
+import {useState, useMemo, useEffect, useRef} from "react";
 import {useLocation} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {addGoodWithCountAction} from "../store/CartReducer";
 
 export function useNoScroll() {
     const [state, setState] = useState(false);

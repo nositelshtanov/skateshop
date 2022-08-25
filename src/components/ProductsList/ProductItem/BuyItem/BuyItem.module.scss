@@ -1,0 +1,22 @@
+.buyBtn {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #303c4a;
+  height: 40px;
+  margin-top: 10px;
+  background: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: #db0023;
+    color: white;
+    border: none;
+    transition: all .3s;
+  }
+}

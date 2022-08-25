@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 import Counter from "../UI/Counter/Counter";
 import Share from "../UI/Share/Share";
 import DetailProductSlider from "../UI/DetailProductSlider/DetailProductSlider";
+import GoBackBtn from "../GoBackBtn/GoBackBtn";
+import BuyBtn from "./buyBtn/buyBtn";
 
 const ProductDetail = ({data}) => {
     const location = window.location.href;
@@ -43,7 +45,7 @@ const ProductDetail = ({data}) => {
                                 <Property
                                     name={<span><strong className="bold">{data.price}</strong> ₽</span>}
                                 >
-                                    <button className={s.buy}>в корзину</button>
+                                    <BuyBtn good={data} addCount={count} />
                                 </Property>
                                 <Property name={"Поделиться:"}>
                                     <Share text={location} />
@@ -52,6 +54,9 @@ const ProductDetail = ({data}) => {
                         </div>
                     </div>
                 </> : <p className={s.load}>Загрузка...</p>}
+                <div className="child_center">
+                    <GoBackBtn />
+                </div>
         </div>
     );
 };
