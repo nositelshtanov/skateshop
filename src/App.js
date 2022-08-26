@@ -8,9 +8,12 @@ import {fetchCategories} from "./asyncActions/categories";
 import {fetchBrands} from "./asyncActions/brands";
 import {fetchGoods} from "./asyncActions/goods";
 import {useDispatch} from "react-redux";
+import {useLocalStorageCart} from "./hooks";
 
 function App() {
     const dispatch = useDispatch();
+    
+    useLocalStorageCart();
 
     useEffect(() => {
         dispatch(fetchCategories());

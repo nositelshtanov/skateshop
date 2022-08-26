@@ -1,7 +1,7 @@
 import {useState, useMemo, useEffect, useRef} from "react";
 import {useLocation} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {addGoodWithCountAction} from "../store/CartReducer";
+import {addGoodWithCountAction, setManyGoodsWithCountAction} from "../store/CartReducer";
 
 export function useNoScroll() {
     const [state, setState] = useState(false);
@@ -73,4 +73,25 @@ export function useQuery() {
     const {search} = useLocation();
 
     return useMemo(() => new URLSearchParams(search), [search]);
+}
+
+export function useLocalStorageCart() {
+    const dispatch = useDispatch();
+    const [wasFirstRender, setWasFirstRender] = useState(false);
+
+    const goods = useSelector(state => {
+        const goods = state.cart.goods;
+
+        if (wasFirstRender) {
+            localStorage.setItem("cart", JSON.stringify(goods));
+        }
+    });
+
+    useEffect(() => {
+        const cartGoods = JSON.parse(localStorage.getItem("cart"));
+
+        dispatch(setManyGoodsWithCountAction(cartGoods));
+
+        setWasFirstRender(true);
+    }, []);
 }

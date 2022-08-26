@@ -36,6 +36,8 @@ export function cartReducer(state = defaultState, action) {
                     }
                     return goodObject;
                 })]};
+        case "SET_MANY_GOODS_WITH_COUNT":
+            return {...state, goods: action.payload};
         default:
             return state;
     }
@@ -59,4 +61,8 @@ export const changeCountAction = (id, newCount) => {
 
 export const addGoodWithCountAction = (good, count) => {
     return {type: "ADD_GOOD_WITH_COUNT", payload: {good, count}};
+};
+
+export const setManyGoodsWithCountAction = (goodObjects) => {
+    return {type: "SET_MANY_GOODS_WITH_COUNT", payload: goodObjects};
 };
