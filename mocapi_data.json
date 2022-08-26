@@ -157,6 +157,141 @@
     },
     {
       "id": "3",
+      "name": "Футболка Ripndip Tastes Like Nerm Tee Almond",
+      "brandId": "7",
+      "brandName": "Ripndip",
+      "categoryId": "0",
+      "price": "3000",
+      "images": ["https://proskate.ru/thumb/2/L2twYuCJaX-SATejRYnzLA/580r580/d/ripndip_tastes_like_nerm_tee_almond_1.webp", "https://proskate.ru/thumb/2/HzXOIaKqyIUZ7tDESv7CHQ/580r580/d/ripndip_tastes_like_nerm_tee_almond_2.webp", "https://proskate.ru/thumb/2/lFm6XI4E9WfWlb3fQfKKZw/580r580/d/ripndip_tastes_like_nerm_tee_almond_3.jpg"],
+      "desc": "Футболка ripndip",
+      "new": true,
+      "characteristics": {
+        "Размер": "XL",
+        "Цвет": "бежевый"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Футболка Thrasher Fire Logo Black",
+      "brandId": "10",
+      "brandName": "Thrasher",
+      "categoryId": "0",
+      "price": "2440",
+      "images": ["https://proskate.ru/thumb/2/LYMplN4WaysvHdCR7yFdlg/580r580/d/futbolka_thrasher_fire_logo_black_1.jpg", "https://proskate.ru/thumb/2/PsXwCg0PuGHHS9yc7QjA8Q/580r580/d/futbolka_thrasher_fire_logo_black_2.jpg", "https://proskate.ru/thumb/2/m4K2G-FY8ygIJNzgDF2dgw/580r580/d/futbolka_thrasher_fire_logo_black_3.jpg"],
+      "desc": "Футболка thrasher черная",
+      "new": false,
+      "characteristics": {
+        "Размер": "S",
+        "Цвет": "черный"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Футболка Blind HUNGOVER BLK",
+      "brandId": "14",
+      "brandName": "Blind",
+      "categoryId": "0",
+      "price": "1050",
+      "images": ["https://proskate.ru/thumb/2/SAJZuH9kgpd8ruVkiysh-w/580r580/d/futbolka_blind_hungover_blk_3.jpg", "https://proskate.ru/thumb/2/a5nsaPIx7Fs8pCsBUw0FlQ/580r580/d/futbolka_blind_hungover_blk_2.jpg"],
+      "desc": "черная футболка Blind",
+      "new": false,
+      "characteristics": {
+        "Размер": "S",
+        "Цвет": "черная"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Скейтборд Almost VR Yth FP Black",
+      "brandId": "1",
+      "brandName": "Almost",
+      "categoryId": "1",
+      "price": "9150",
+      "images": ["https://proskate.ru/thumb/2/fld9_j8uNMSzHf8JnBVqhw/580r580/d/almost_vr_yth_fp_black_725_2.jpg"],
+      "desc": "В собранных комплитах некоторые детали могут отличаться по цвету от тех, что представлены на фото.",
+      "new": true,
+      "characteristics": {
+        "Размер": "7.25",
+        "Цвет": "черный"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Тапочки Ripndip Nikola Slides",
+      "brandId": "7",
+      "brandName": "Ripndip",
+      "categoryId": "3",
+      "price": "3750",
+      "images": ["https://proskate.ru/thumb/2/PDj6S_Ob6eqA8MXxWqlZ8Q/580r580/d/ripndip_nikola_slides_1.webp", "https://proskate.ru/thumb/2/WHG_JvQKNPvcVM6OtEoJKA/580r580/d/ripndip_nikola_slides_4.webp", "https://proskate.ru/thumb/2/r03nKhfpDEdcKd2AMHnp2Q/580r580/d/ripndip_nikola_slides_5.webp", "https://proskate.ru/thumb/2/pQiaGMcIPGh_pTGx4FxoFQ/580r580/d/ripndip_nikola_slides_3.webp", "https://proskate.ru/thumb/2/a-VBpDOd8gHGrH12fmKgzw/580r580/d/ripndip_nikola_slides_2.webp"],
+      "desc": "Фирменный брендинг в виде кота Нермала",
+      "new": true,
+      "characteristics": {
+        "Размер": "10",
+        "Цвет": "сине-черный"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Круизёр Footwork FRUITS",
+      "brandId": "13",
+      "brandName": "Footwork",
+      "categoryId": "2",
+      "price": "7990",
+      "images": ["https://proskate.ru/thumb/2/I0HjmBD9DfYDO06nTVHotA/580r580/d/kruizer_footwork_fruits_787_x_308.jpg", "https://proskate.ru/thumb/2/NHkJpM1W3jUZAUZg1RubmQ/580r580/d/kruizer_footwork_fruits_787_x_308_2.jpg"],
+      "desc": "круизер в сборе",
+      "new": false,
+      "characteristics": {
+        "Размер": "7.87",
+        "Цвет": "непонятный)"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Кеды Fallen The Goat Black Navajo",
+      "brandId": "5",
+      "brandName": "Fallen",
+      "categoryId": "3",
+      "price": "6000",
+      "images": ["https://proskate.ru/thumb/2/IkkFiFfXjH2ak0OLNifuSw/580r580/d/fallen_the_goat_black_navajo_1.webp", "https://proskate.ru/thumb/2/L-HLxKip4h-RETuN9QjkwA/580r580/d/fallen_the_goat_black_navajo_2.webp", "https://proskate.ru/thumb/2/S53GrSVy_ChPPFwVgaDymQ/580r580/d/fallen_the_goat_black_navajo_7.webp"],
+      "desc": "Размер указан в US",
+      "new": true,
+      "characteristics": {
+        "Размер": "8.5",
+        "Цвет": "черный"
+      }
+    },
+    {
+      "id": "10",
+      "name": "Кеды Adidas Tyshawn Ftwr White CBLACK FTWWHT",
+      "brandId": "0",
+      "brandName": "adidas Skateboarding",
+      "categoryId": "3",
+      "price": "7850",
+      "images": ["https://proskate.ru/thumb/2/OTLP31sXYVw2mjY30bmFwQ/580r580/d/kedy_adidas_tyshawn_ftwr_white_cblack_ftwwht_1.jpg", "https://proskate.ru/thumb/2/LV7MQB4aQbn5Ty2t_3yfbw/580r580/d/kedy_adidas_tyshawn_ftwr_white_cblack_ftwwht_7_11.jpg", "https://proskate.ru/thumb/2/xvDkZ9MBByxXoaqruZefJg/580r580/d/kedy_adidas_tyshawn_ftwr_white_cblack_ftwwht_4.jpg", "https://proskate.ru/thumb/2/fnpPq1kbX-LJbJykK2JbtA/580r580/d/kedy_adidas_tyshawn_ftwr_white_cblack_ftwwht_3.jpg"],
+      "desc": "белые кеды адидас",
+      "new": false,
+      "characteristics": {
+        "Размер": "8.5",
+        "Цвет": "белый"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Скейтборд Blind OG Ripped FP Red Orange",
+      "brandId": "14",
+      "brandName": "Blind",
+      "categoryId": "1",
+      "price": "9150",
+      "images": ["https://proskate.ru/thumb/2/7n9BWlG5gqyE9PZNp6hi0g/580r580/d/blind_og_ripped_fp_red_orange.jpg"],
+      "desc": "скеееейт!",
+      "new": false,
+      "characteristics": {
+        "Размер": "7.75",
+        "Цвет": "оранжевый"
+      }
+    },
+    {
+      "id": "5",
       "name": "",
       "brandId": "0",
       "brandName": "",

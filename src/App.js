@@ -12,7 +12,7 @@ import {useLocalStorageCart} from "./hooks";
 
 function App() {
     const dispatch = useDispatch();
-    
+
     useLocalStorageCart();
 
     useEffect(() => {
